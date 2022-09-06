@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{617CDF10-6C94-4DA3-8866-1C01A1229BAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{D2B274C5-94CA-475B-A855-0F6788A3607E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotMeter.Core", "Sources\BotMeter.Core\BotMeter.Core.csproj", "{32CD7673-FCD9-4BB1-98EA-F57FA8E76275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotMeter.Web", "Sources\BotMeter.Web\BotMeter.Web.csproj", "{066FD7C5-239C-4B60-AE42-0A8F462E3955}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32CD7673-FCD9-4BB1-98EA-F57FA8E76275} = {D2B274C5-94CA-475B-A855-0F6788A3607E}
+		{066FD7C5-239C-4B60-AE42-0A8F462E3955} = {D2B274C5-94CA-475B-A855-0F6788A3607E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32CD7673-FCD9-4BB1-98EA-F57FA8E76275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CD7673-FCD9-4BB1-98EA-F57FA8E76275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CD7673-FCD9-4BB1-98EA-F57FA8E76275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CD7673-FCD9-4BB1-98EA-F57FA8E76275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066FD7C5-239C-4B60-AE42-0A8F462E3955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066FD7C5-239C-4B60-AE42-0A8F462E3955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066FD7C5-239C-4B60-AE42-0A8F462E3955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066FD7C5-239C-4B60-AE42-0A8F462E3955}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
