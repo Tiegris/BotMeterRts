@@ -1,6 +1,6 @@
 ﻿namespace BotMeter.Core.Types;
 
-internal class Star
+public class Star
 {
     public Vector Vector { get; set; }
     private readonly StringId _name;

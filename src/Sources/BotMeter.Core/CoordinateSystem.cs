@@ -2,10 +2,10 @@
 
 namespace BotMeter.Core;
 
-internal class CoordinateSystem {
+public class CoordinateSystem {
     private readonly double _fiX, _fiZ;
     private readonly List<Star> _stars = new();
-    private static readonly double EarthRotationAngularVelocity = 2.0 * Math.PI / new TimeSpan(0, 23, 56, 4, 1).TotalSeconds;
+    private static readonly double earthRotationAngularVelocity = 2.0 * Math.PI / new TimeSpan(0, 23, 56, 4, 1).TotalSeconds;
     private readonly DateTime _referenceTime;
 
     private Vector AlignNorth(Vector v) {
@@ -15,7 +15,7 @@ internal class CoordinateSystem {
     }
 
     private Vector Revolve(Vector v, TimeSpan t) {
-        double fi = t.TotalSeconds * EarthRotationAngularVelocity;
+        double fi = t.TotalSeconds * earthRotationAngularVelocity;
         return Vector.RotateOnZ(v, fi);
     }
 

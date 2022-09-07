@@ -2,7 +2,7 @@
 
 namespace BotMeter.Core.Types;
 
-internal class Vector
+public class Vector
 {
     public double X, Y, Z;
     private static readonly Random Ran = new Random();

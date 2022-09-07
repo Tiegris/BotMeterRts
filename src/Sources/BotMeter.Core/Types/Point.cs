@@ -2,6 +2,8 @@
 
 public struct Point
 {
+    public static readonly Point Origin = new Point();
+    
     public double X, Y;
     public Point(double x = 0.0, double y = 0.0) {
         X = x;

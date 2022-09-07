@@ -2,12 +2,12 @@
 
 namespace BotMeter.Core;
 
-internal class DataReader : IDisposable
+public class DataReader : IDisposable
 {
     private const double RodLength = 500.0;
     private const double EndOfRopeDistance = 1000.0;
 
-    private readonly char[] _sepChars = new char[2] { ' ', '\t' };
+    private readonly char[] _sepChars = { ' ', '\t', ';' };
 
     private readonly StreamReader _stream;
 
